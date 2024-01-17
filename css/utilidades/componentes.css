@@ -1,7 +1,8 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .button {
@@ -13,9 +14,18 @@
   color: var(--p5);
   text-transform: uppercase;
   font: 600 1.125rem / 1.33 "Poppins", "sans-serif";
+  max-width: max-content;
 }
 .button:hover {
   background: var(--gradiente_hover);
+}
+
+.button.secundario {
+  background: var(--c10);
+  color: var(--W);
+}
+.button.secundario:hover {
+  background: var(--c9);
 }
 
 .link {

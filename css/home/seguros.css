@@ -1,0 +1,61 @@
+.seguros_bg {
+  background: var(--c11);
+}
+
+.seguros {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.seguros h2 {
+  grid-column: 1/-1;
+}
+.seguro_item {
+  background: var(--c12);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  padding: 32px 32px 32px 60px;
+}
+
+.seguros h3 {
+  margin-bottom: 40px;
+}
+.seguro_item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+.seguro_item ul {
+  grid-column: 1/-1;
+  margin-bottom: 32px;
+}
+.seguro_item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.seguro_item li + li {
+  margin-top: 20px;
+}
+.seguro_item li::before {
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 9px;
+  background-image: url("../../img/icones/lista.svg");
+  position: absolute;
+  left: -21px;
+}
+.seguro_item a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .seguros {
+    grid-template-columns: 1fr;
+  }
+}

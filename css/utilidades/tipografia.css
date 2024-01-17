@@ -8,7 +8,7 @@
   font: 400 1.125rem / 1.33 "Poppins", "sans-serif";
 }
 .font_1_m_b {
-  font: 600 1.125rem / 1.33 "Poppins", "sans-serif";
+  font: 600 1.5rem / 1.33 "Poppins", "sans-serif";
 }
 .font_1_l {
   font: 400 1.5rem / 1.5 "Poppins", "sans-serif";
@@ -46,7 +46,8 @@
     font-size: 3rem;
   }
   .font_2_l,
-  .font_2_l_B {
+  .font_2_l_B,
+  .font_1_m_b {
     font-size: 1.125rem;
   }
 }

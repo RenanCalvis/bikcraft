@@ -42,4 +42,7 @@
   .parceiros > ul li:nth-child(-n + 6) {
     border-bottom: 2px solid var(--c2);
   }
+  .parceiros > ul li:nth-child(even) {
+    border-right: none;
+  }
 }

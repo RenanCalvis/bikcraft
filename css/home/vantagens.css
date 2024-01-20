@@ -1,0 +1,21 @@
+.vantagens_bg{
+    background-color: var(--c12);
+}
+
+.vantagens{
+    padding: 120px 220px;
+}
+
+.vantagens h2{
+    margin-bottom: 82px;
+}
+
+.vantagens ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.vantagens p{
+    max-width: 37ch;
+}

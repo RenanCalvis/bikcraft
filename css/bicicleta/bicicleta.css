@@ -1,0 +1,117 @@
+.bicicleta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#bicicleta .titulo p{
+    text-transform: uppercase;
+}
+
+.bicicleta_imagens{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bicicleta_imagens img{
+    flex: 1;
+    min-width: 200px;
+}
+
+.bicicleta_imagens img:first-child{
+    min-width: 100%;
+}
+
+.bicicleta_conteudo > p{
+    margin-bottom: 32px;
+}
+
+.bicicleta_comprar{
+    display: grid;
+    grid-template-columns: max-content auto;
+    align-items: center;
+    justify-items: start;
+    gap: 8px 12px;
+    margin-bottom: 40px;
+}
+
+.bicicleta_comprar > a{
+    grid-row: span 2;
+}
+
+.bicicleta_comprar > span{
+    display: flex;
+    align-items: center;
+    background-color: var(--c12);
+    border-radius: 5px;
+    padding: 4px 8px;
+    gap: 10px;
+}
+
+.bicicleta_comprar > span img{
+    margin: 0;
+    width: 16px;
+    height: 16px;
+}
+
+.bicicleta_conteudo h2{
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    letter-spacing: .015em;
+}
+
+.bicicleta_informacoes, .bicicleta_ficha{
+    background-color: var(--c12);
+    border-radius: 5px;
+    padding: 32px;
+    margin-bottom: 40px;
+}
+
+.bicicleta_informacoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 33px;
+}
+
+.bicicleta_informacoes h3{
+    margin-bottom: 8px;
+}
+.bicicleta_informacoes img{
+    width: 24px;
+    margin-bottom: 4px;
+}
+
+.bicicleta_ficha li {
+    padding: 4px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--c11);
+}
+
+.bicicleta_ficha li:last-child{
+    border: none;
+}
+
+@media (max-width:800px){
+    .bicicleta{
+        grid-template-columns: 1fr;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bicicleta_imagens{
+        grid-row: 2;
+    }
+}
+@media (max-width:400px){
+    .bicicleta_comprar{
+        grid-template-columns: 1fr;
+    }
+    .bicicleta_informacoes{
+        grid-template-columns: 1fr;
+    }
+}

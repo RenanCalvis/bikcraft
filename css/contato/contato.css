@@ -5,6 +5,7 @@
 .contato{
     display: grid;
     grid-template-columns: 5fr 7fr;
+    margin-bottom: 120px;
 }
 
 #contato .contato .footer_redes{
@@ -61,6 +62,7 @@
 @media(max-width:800px){
     .contato{
         grid-template-columns: 1fr;
+        margin-bottom: 60px;
     }
     .contato_dados, .contato_formulario{
         padding: 20px;

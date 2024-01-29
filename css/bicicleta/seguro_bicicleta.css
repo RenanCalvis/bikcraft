@@ -1,5 +1,6 @@
 .seguro_bicicleta_bg {
-  background-color: var(--c11);
+  background: var(--c11) url(../../img/dec/bottom-right.svg) no-repeat bottom 180px
+  right 40px;
   box-shadow: inset 0 120px var(--W), inset 0 -120px var(--c12);
 }
 

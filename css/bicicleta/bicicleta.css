@@ -5,6 +5,8 @@
     gap: 40px;
     padding-top: 60px;
     padding-bottom: 60px;
+    background: url(../../img/dec/bottom-left.svg) no-repeat bottom 100px
+    left 20px;;
 }
 
 #bicicleta_interna .titulo p{
@@ -95,7 +97,11 @@
 .bicicleta_ficha li:last-child{
     border: none;
 }
-
+@media (max-width:900px){
+    .bicicleta{
+        background: none;
+    }
+}
 @media (max-width:800px){
     .bicicleta{
         grid-template-columns: 1fr;

@@ -41,7 +41,8 @@
 
 .orcamento_produto {
   border-radius: 5px 0 0 5px;
-  background: var(--c12);
+  background: var(--c12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    40px left 40px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -109,7 +110,8 @@
 
 .orcamento_dados {
   border-radius: 0 5px 5px 0;
-  background: var(--W);
+  background: var(--W) url(../../img/dec/bottom-right.svg) no-repeat bottom 40px
+    right 40px;
 }
 
 .orcamento_conteudo {
@@ -156,20 +158,29 @@
   .orcamento_dados {
     padding: 32px;
   }
+  .orcamento_dados {
+    background: var(--W) url(../../img/dec/bottom-right.svg) no-repeat bottom
+      20px right 20px;
+  }
+  .orcamento_produto {
+    background: var(--c12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+      20px left 20px;
+  }
 }
-@media (max-width: 800px){
-  .orcamento{
+@media (max-width: 800px) {
+  .orcamento {
     grid-template-columns: 1fr;
   }
-  .orcamento_produto{
+  .orcamento_produto {
     border-radius: 5px 5px 0 0;
+    background: var(--c12);
   }
-  .orcamento_dados{
+  .orcamento_dados {
     border-radius: 0 0 5px 5px;
   }
 }
-@media (max-width: 400px){
-  .orcamento_produto{
+@media (max-width: 400px) {
+  .orcamento_produto {
     grid-template-columns: 1fr;
   }
 }

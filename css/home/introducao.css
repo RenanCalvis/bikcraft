@@ -1,5 +1,6 @@
 .introducao_bg {
-  background-color: var(--c12);
+  background: var(--c12) url(../../img/dec/bottom-left.svg) no-repeat bottom
+    160px left 40px;
   box-shadow: inset 0 -120px var(--W);
 }
 
@@ -27,6 +28,12 @@
 .introducao_conteudo {
   align-self: end;
   padding-bottom: 200px;
+}
+
+@media (max-width: 1450px) {
+  .introducao_bg {
+    background: var(--c12);
+  }
 }
 
 @media (max-width: 800px) {

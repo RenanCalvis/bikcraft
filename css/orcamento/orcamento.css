@@ -147,6 +147,7 @@
 
 .orcamento_detalhes li img {
   width: 16px;
+  height: auto;
 }
 
 .orcamento_produto input:checked + label + .orcamento_detalhes {

@@ -1,5 +1,6 @@
+//-Menu Ativo
 const links = document.querySelectorAll('.header_menu a');
-
+// Utilizando Function padrão.
 function menuAtivo(link){
     const href = link.href;
     const url = document.location.href
@@ -8,4 +9,15 @@ function menuAtivo(link){
     }
 }
 links.forEach(menuAtivo);
+
+//-Ativação de items por parametro
+const parametros = new URLSearchParams(location.search);
+
+// Utilizando arrow Function.
+parametros.forEach((parametro) => {
+    const elemento = document.getElementById(parametro);
+    if(elemento){
+        elemento.checked = true;
+    }
+});
 

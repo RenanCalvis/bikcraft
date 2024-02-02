@@ -36,3 +36,16 @@ perguntas.forEach( eventosPerguntas = (pergunta) =>{
     })
 })
 
+//Galeria bicicletas
+const galeria = document.querySelectorAll(".bicicleta_imagens img");
+const galeriaContainer = document.querySelector(".bicicleta_imagens");
+
+galeria.forEach((img) =>{
+    img.addEventListener("click", (event) =>{
+        const img = event.currentTarget;
+        const media = window.matchMedia("(min-width: 935px)").matches;
+        if(media){
+            galeriaContainer.prepend(img);
+        }
+    })
+})
